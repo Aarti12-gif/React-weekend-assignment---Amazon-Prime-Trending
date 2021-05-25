@@ -33,12 +33,10 @@ const App = ({slides}) => {
     <>
     <h1 data-testid="title">{slides[increment].title}</h1>
     <p data-testid="text">{slides[increment].text}</p>
-    <button data-testid="button-restart" onClick={prevHandler} disabled={isDisabled}>Restart</button>
-    <button data-testid="button-prev" onClick={prevHandler} disabled={isDisabled}>Prev</button>
-    <button data-testid="button-next" onClick={prevHandler} disabled={isDisabled}>Next</button>
-     
-
-    </>
+    <button data-testid="button-restart" onClick={resetHandler} disabled={isDisabled1}>Restart</button>
+    <button data-testid="button-prev" onClick={prevHandler} disabled={isDisabled2}>Prev</button>
+    <button data-testid="button-next" onClick={nextHandler} disabled={isDisabled3}>Next</button>
+     </>
   );
 };
 
